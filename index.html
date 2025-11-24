@@ -20,7 +20,7 @@
             
             <form id="download-form">
                 <div class="form-group">
-                    <input type="text" id="asset-id-input" placeholder="Asset ID or require(ID)"> 
+                    <input type="text" id="asset-id-input" placeholder="Asset ID or require"> 
                 </div>
                 <div class="form-group">
                     <input type="text" id="filename-input" placeholder="Desired Filename (optional, e.g., CoolExploit)"> 
@@ -72,7 +72,7 @@
             if (match && match[1]) {
                 assetId = match[1];
             } else {
-                alert("You need to enter a goddamn Asset ID or a require() string with an ID!");
+                alert("You need to enter a Asset ID or a require() string with an ID!");
                 return;
             }
             // --- END OF EXTRACTION LOGIC ---
