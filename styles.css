@@ -1,0 +1,163 @@
+/* Basic Reset and Variables */
+body {
+    --primary-blue: #4285F4;
+    --dark-bg: #0c0c0e; /* Slightly darker background to match the original */
+    --card-bg: #1a1a1f;
+    --text-color-light: #d1d1d1; /* Softer, slightly gray text for general content */
+    --text-color-faded: #a0a0a0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-color-light); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Container and Card Layout --- */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 380px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* --- CUSTOM IMAGE HEADER STYLING --- */
+.image-header {
+    margin-bottom: 25px; 
+    display: flex;
+    justify-content: center;
+}
+
+.custom-logo {
+    /* Ensures the image doesn't overflow the card and maintains the correct width/height */
+    max-width: 100%; 
+    height: auto;
+}
+/* --- END CUSTOM IMAGE HEADER STYLING --- */
+
+
+.description {
+    color: var(--text-color-faded);
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* --- Form and Button Styling --- */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.card input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #2b2b33;
+    border: 1px solid #3c3c45;
+    border-radius: 8px;
+    color: var(--text-color-light);
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.card input[type="text"]:focus {
+    border-color: var(--primary-blue);
+    outline: none;
+}
+
+.download-button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(66, 133, 244, 0.4);
+}
+
+.download-button:hover {
+    background-color: #357ae8;
+}
+
+.download-button:active {
+    transform: translateY(1px);
+}
+
+.support-text {
+    font-size: 12px;
+    color: var(--text-color-faded);
+}
+
+.support-text a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+.support-text a:hover {
+    color: #5a9bff;
+}
+
+/* --- Footer Stats --- */
+.footer-stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: var(--text-color-faded);
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Specific color overrides for the stat values */
+.footer-stats .stat-item:nth-child(1) .stat-value { 
+    color: #8cd879; /* Green for Uptime */
+}
+.footer-stats .stat-item:nth-child(2) .stat-value { 
+    color: #f5c765; /* Yellow/Orange for Speed */
+}
+.footer-stats .stat-item:nth-child(3) .stat-value { 
+    color: #ffd700; /* Gold/Yellow for Rating */
+}
+
+.copyright {
+    font-size: 10px;
+    color: #444;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 10px;
+}
+

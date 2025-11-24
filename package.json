@@ -1,0 +1,12 @@
+{
+  "name": "roblox-asset-downloader",
+  "version": "1.0.0",
+  "description": "A Vercel-based proxy for downloading Roblox assets.",
+  "main": "index.html",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7" 
+  }
+}
